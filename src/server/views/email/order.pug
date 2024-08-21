@@ -1,0 +1,17 @@
+extends baseEmail
+
+block content
+  p New order from #{name}
+  p User information : 
+  p Phone number : #{phoneNumber} , Email address : #{email} , Address : #{address}
+  p Order information : 
+  p #{order}
+  p Total price : #{totalPrice}
+  table.btn.btn-primary(role='presentation', border='0', cellpadding='0', cellspacing='0')
+    tbody
+      tr
+        td(align='left')
+          table(role='presentation', border='0', cellpadding='0', cellspacing='0')
+            tbody
+              tr
+                td
